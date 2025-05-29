@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/anmord/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/anmord/frontend-project-46/actions)",
   "main": "gendiff.js",
   "scripts": {
@@ -18,5 +19,11 @@
   "homepage": "https://github.com/anmord/frontend-project-46#readme",
   "dependencies": {
     "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0"
   }
 }
