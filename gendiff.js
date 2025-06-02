@@ -16,3 +16,5 @@ program
   .action(command);
 
 program.parse(process.argv);
+
+export default command;

@@ -5,7 +5,7 @@
   "description": "[![Actions Status](https://github.com/anmord/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/anmord/frontend-project-46/actions)",
   "main": "gendiff.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
     "@eslint/js": "^9.28.0",
+    "babel-jest": "^30.0.0-beta.3",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2",
