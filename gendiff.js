@@ -1,11 +1,11 @@
-import { Command } from 'commander';
-import parsing from './pars.js';
+import { Command } from 'commander'
+import parsing from './parse.js'
 
-const program = new Command();
+const program = new Command()
 
 const command = (filepath1, filepath2) => {
-  parsing(filepath1, filepath2);
-};
+  parsing(filepath1, filepath2)
+}
 
 program
   .name('gendiff')
@@ -13,8 +13,8 @@ program
   .description('Compares two configuration files and shows a difference.')
   .option('-f, --format [type]', 'output format')
   .arguments('<filepath1> <filepath2>')
-  .action(command);
+  .action(command)
 
-program.parse(process.argv);
+program.parse(process.argv)
 
-export default command;
+export default command
