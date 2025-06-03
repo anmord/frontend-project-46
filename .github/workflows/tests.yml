@@ -24,6 +24,7 @@ jobs:
       with:
         path: ~/.sonar/cache
         key: ${{ runner.os }}-sonar
+        distribution: 'abort'
         restore-keys: |
           ${{ runner.os }}-sonar
 
