@@ -1,5 +1,5 @@
 import path from 'path'
-import parsing from '../parse.js'
+import parsing from '../src/parse.js'
 
 test('Correct', () => {
   const filePath1 = path.resolve('__fixtures__', 'file1_test.json')
