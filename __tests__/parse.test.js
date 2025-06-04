@@ -1,5 +1,5 @@
 import path from 'path'
-import parsing from '../src/parse.js'
+import fileTypeDefinition from '../src/parsers.js'
 
 test('Correct_.json_1', () => {
   const filePath1 = path.resolve('__fixtures__', 'file1_test.json')
@@ -14,7 +14,7 @@ test('Correct_.json_1', () => {
   + verbose: true
 }`
 
-  expect(parsing(filePath1, filePath2)).toBe(expected)
+  expect(fileTypeDefinition(filePath1, filePath2)).toBe(expected)
 })
 
 test('Correct_.json_2', () => {
@@ -27,5 +27,5 @@ test('Correct_.json_2', () => {
   + verbose: true
 }`
 
-  expect(parsing(filePath1, filePath2)).toBe(expected)
+  expect(fileTypeDefinition(filePath1, filePath2)).toBe(expected)
 })
