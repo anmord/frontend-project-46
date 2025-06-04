@@ -1,10 +1,10 @@
 import { Command } from 'commander'
-import parsing from './parse.js'
+import fileTypeDefinition from './src/parsers.js'
 
 const program = new Command()
 
 const command = (filepath1, filepath2) => {
-  parsing(filepath1, filepath2)
+  fileTypeDefinition(filepath1, filepath2);
 }
 
 program

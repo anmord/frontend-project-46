@@ -1,18 +1,9 @@
-import path from 'path'
-import fs from 'fs'
 import _ from 'lodash'
 
 const parsing = (filepath1, filepath2) => {
-  const getFinalObj = compareFile(transformation(filepath1), transformation(filepath2))
-  // console.log(sortArray(getFinalObj))
+  const getFinalObj = compareFile(filepath1, filepath2)
+  console.log(sortArray(getFinalObj))
   return sortArray(getFinalObj)
-}
-
-const transformation = (filepath) => {
-  const absolutePath = path.resolve(process.cwd(), filepath)
-  const fileContent = fs.readFileSync(absolutePath, 'utf8')
-  const data = JSON.parse(fileContent)
-  return data
 }
 
 const compareFile = (file1, file2) => {
