@@ -18,13 +18,13 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '11'
+        distribution: 'temurin'
 
     - name: Cache SonarQube packages
       uses: actions/cache@v4
       with:
         path: ~/.sonar/cache
         key: ${{ runner.os }}-sonar
-        distribution: 'abort'
         restore-keys: |
           ${{ runner.os }}-sonar
 
