@@ -4,7 +4,7 @@ import _ from 'lodash'
 
 const parsing = (filepath1, filepath2) => {
   const getFinalObj = compareFile(transformation(filepath1), transformation(filepath2))
-  console.log(sortArray(getFinalObj))
+  //console.log(sortArray(getFinalObj))
   return sortArray(getFinalObj)
 }
 
