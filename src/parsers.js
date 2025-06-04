@@ -9,7 +9,7 @@ const fileTypeDefinition = (filepath1, filepath2) => {
   const absolutePath2 = path.resolve(process.cwd(), filepath2)
   const fileContent1 = fs.readFileSync(absolutePath1, 'utf8')
   const fileContent2 = fs.readFileSync(absolutePath2, 'utf8')
-  
+
   switch (extname) {
     case '.yaml':
     case '.yml':
