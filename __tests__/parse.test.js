@@ -1,7 +1,7 @@
 import path from 'path'
 import parsing from '../src/parse.js'
 
-test('Correct', () => {
+test('Correct_.json_1', () => {
   const filePath1 = path.resolve('__fixtures__', 'file1_test.json')
   const filePath2 = path.resolve('__fixtures__', 'file2_test.json')
 
@@ -17,7 +17,7 @@ test('Correct', () => {
   expect(parsing(filePath1, filePath2)).toBe(expected)
 })
 
-test('Correct1', () => {
+test('Correct_.json_2', () => {
   const filePath1 = path.resolve('__fixtures__', 'file1_non_test.json')
   const filePath2 = path.resolve('__fixtures__', 'file2_non_test.json')
 
