@@ -6,9 +6,7 @@ const program = new Command()
 const command = (filepath1, filepath2) => {
   const options = program.opts()
   const formatter = options.format || 'stylish'
-  if (formatter === 'stylish') {
-    fileTypeDefinition(filepath1, filepath2)
-  }
+  fileTypeDefinition(filepath1, filepath2, formatter)
 }
 
 program
