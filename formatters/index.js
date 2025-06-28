@@ -1,13 +1,16 @@
-import parsing from './parse.js'
+import stylishFormatter from './stylish.js'
 import plainFormatter from './plain.js'
+import jsonFormatter from './json.js'
 
 const selectFormatters = (filepath1, filepath2, format) => {
   switch (format) {
     case 'plain':
       return plainFormatter(filepath1, filepath2)
+    case 'json':
+      return jsonFormatter(filepath1, filepath2)
     case 'stylish':
     default:
-      return parsing(filepath1, filepath2)
+      return stylishFormatter(filepath1, filepath2)
   }
 }
 
