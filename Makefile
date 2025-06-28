@@ -6,3 +6,5 @@ lint:
 	
 test-coverage:
 	npm run test -- --coverage
+gendiff: 
+	node gendiff.js file_json_3.json file_json_4.json 
