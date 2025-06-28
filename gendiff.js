@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Command } from 'commander'
 import fileTypeDefinition from './src/parsers.js'
 

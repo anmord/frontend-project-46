@@ -4,6 +4,9 @@
   "type": "module",
   "description": "[![Actions Status](https://github.com/anmord/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/anmord/frontend-project-46/actions)",
   "main": "gendiff.js",
+  "bin": {
+    "gendiff": "./gendiff.js"  
+  },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
