@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-const parsing = (filepath1, filepath2) => {
+const stylishFormatter = (filepath1, filepath2) => {
   const getFinalObj = compareFile(filepath1, filepath2)
   console.log(getFinalObj)
   return getFinalObj
@@ -41,4 +41,4 @@ const compareFile = (file1, file2, depth = 1) => {
   return `{\n${result.join('\n')}\n${baseIndent}}`
 }
 
-export default parsing
+export default stylishFormatter
