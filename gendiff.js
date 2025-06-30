@@ -16,7 +16,7 @@ program
   .description('Compares two configuration files and shows a difference.')
   .option('-f, --format <type>', 'output format', 'stylish')
   .arguments('<filepath1> <filepath2>')
-  .action(command)
+  .action((filepath1, filepath2) => command(filepath1, filepath2))
 
 program.parse(process.argv)
 
