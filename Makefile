@@ -6,3 +6,6 @@ lint:
 	
 test-coverage:
 	npm run test -- --coverage
+
+echosomething:
+	echo something
