@@ -141,7 +141,6 @@ test('Correct_stylish_.yaml_1', () => {
   expect(fileTypeDefinition(filePath1, filePath2, 'stylish')).toBe(expected)
 })
 
-
 test('Correct_stylish_.yaml_2', () => {
   const filePath1 = path.resolve('__fixtures__', 'file_yaml_3_test.yaml')
   const filePath2 = path.resolve('__fixtures__', 'file_yaml_4_test.yaml')
@@ -171,7 +170,7 @@ test('Correct_stylish_.yaml_2', () => {
   + group3: {
         deep: {
             id: {
-                number: 45
+              number: 45
             }
         }
         fee: 100500
