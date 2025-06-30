@@ -18,7 +18,7 @@ test('Correct_stylish_.json_1', () => {
         }
         setting6: {
             doge: {
-              - wow: 
+              - wow:
               + wow: so much
             }
             key: value
@@ -107,7 +107,7 @@ test('Correct_stylish_.yaml_1', () => {
         }
         setting6: {
             doge: {
-              - wow: 
+              - wow:
               + wow: so much
             }
             key: value
@@ -140,6 +140,7 @@ test('Correct_stylish_.yaml_1', () => {
 }`
   expect(fileTypeDefinition(filePath1, filePath2, 'stylish')).toBe(expected)
 })
+
 
 test('Correct_stylish_.yaml_2', () => {
   const filePath1 = path.resolve('__fixtures__', 'file_yaml_3_test.yaml')
@@ -227,9 +228,9 @@ test('Correct_json_.json_2', () => {
   const filePath1 = path.resolve('__fixtures__', 'file_json_3_test.json')
   const filePath2 = path.resolve('__fixtures__', 'file_json_4_test.json')
 
-  const expected = `[{"key": "common", "type": "added", "value": {"follow": false, "setting1": "Value 1", "setting3": null, 
-  "setting4": "blah blah", "setting5": {"key5": "value5"}, "setting6": {"doge": {"wow": "so much"}, "key": "value", "ops": "vops"}}}, 
-  {"key": "group1", "type": "added", "value": {"baz": "bars", "foo": "bar", "nest": "str"}}, {"key": "group3", "type": "added", 
+  const expected = `[{"key": "common", "type": "added", "value": {"follow": false, "setting1": "Value 1", "setting3": null,
+  "setting4": "blah blah", "setting5": {"key5": "value5"}, "setting6": {"doge": {"wow": "so much"}, "key": "value", "ops": "vops"}}},
+  {"key": "group1", "type": "added", "value": {"baz": "bars", "foo": "bar", "nest": "str"}}, {"key": "group3", "type": "added",
   "value": {"deep": {"id": {"number": 45}}, "fee": 100500}}]`
   expect(fileTypeDefinition(filePath1, filePath2, 'json')).toEqual(JSON.parse(expected))
 })
