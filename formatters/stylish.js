@@ -13,7 +13,7 @@ const stringify = (value, depth) => {
   const indent = ' '.repeat(depth * 4)
   const closeIndent = ' '.repeat((depth - 1) * 4)
   const lines = Object.entries(value).map(
-    ([key, val]) => `${indent}${key}: ${stringify(val, depth + 1)}`
+    ([key, val]) => `${indent}${key}: ${stringify(val, depth + 1)}`,
   )
   return `{\n${lines.join('\n')}\n${closeIndent}}`
 }

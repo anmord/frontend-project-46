@@ -24,7 +24,7 @@ const compareFile = (file1, file2) => {
         key,
         type: 'updated',
         oldValue: file1[key],
-        newValue: file2[key]
+        newValue: file2[key],
       }
     }
     return { key, type: 'unchanged', value: file1[key] }

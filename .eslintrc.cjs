@@ -8,9 +8,11 @@ module.exports = {
     'standard',
   ],
   parserOptions: {
-    ecmaVersion: 15,
+    ecmaVersion: 2021, 
     sourceType: 'module',
   },
   rules: {
+    'semi': ['error', 'never'], 
+    'comma-dangle': ['error', 'always-multiline'], 
   },
-};
+}
