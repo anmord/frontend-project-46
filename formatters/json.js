@@ -2,7 +2,7 @@ import _ from 'lodash'
 
 const jsonFormatter = (filepath1, filepath2) => {
   const getFinalObj = compareFile(filepath1, filepath2)
-  //console.log(JSON.stringify(getFinalObj))
+  // console.log(JSON.stringify(getFinalObj))
   return getFinalObj
 }
 
