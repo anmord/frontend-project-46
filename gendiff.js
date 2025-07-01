@@ -4,7 +4,7 @@ import fileTypeDefinition from './src/parsers.js'
 
 const program = new Command()
 
-const command = (filepath1, filepath2) => {
+function command(filepath1, filepath2) {
   const options = program.opts()
   const formatter = options.format || 'stylish'
   fileTypeDefinition(filepath1, filepath2, formatter)
