@@ -1,5 +1,7 @@
 import fileTypeDefinition from './src/parsers.js'
 
-export const gendiff = (filepath1, filepath2, formatter) => {
+const gendiff = (filepath1, filepath2, formatter) => {
   return fileTypeDefinition(filepath1, filepath2, formatter)
 }
+
+export default gendiff
