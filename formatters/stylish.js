@@ -2,7 +2,7 @@ import _ from 'lodash'
 
 const stylishFormatter = (filepath1, filepath2) => {
   const getFinalObj = compareFile(filepath1, filepath2)
-  console.log(getFinalObj)
+  //console.log(getFinalObj)
   return getFinalObj
 }
 
