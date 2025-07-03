@@ -7,4 +7,4 @@ lint:
 test-coverage:
 	npm run test -- --coverage
 gendiff: 
-	node ./bin/gendiff.js file_json_3.json file_json_4.json 
+	node ./bin/gendiff.js __fixtures__/file_json_3_test.json __fixtures__/file_json_3_test.json 
