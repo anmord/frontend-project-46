@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import yaml from 'js-yaml'
-import selectFormatters from '../formatters/index.js'
+import selectFormatters from './formatters/index.js'
 
 const fileTypeDefinition = (filepath1, filepath2, formatter) => {
   const extname = path.extname(filepath1)
